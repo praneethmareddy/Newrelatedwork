@@ -1,3 +1,20 @@
+\documentclass[conference]{IEEEtran}
+
+\title{LLM-Assisted Constraint-Aware Pipeline (CAP) for Scalable and Adaptive SFC Placement in 5G and Beyond Networks}
+
+\author{\IEEEauthorblockN{Author 1, Author 2, Author 3, Author 4}
+\IEEEauthorblockA{Department of Computer Science, University Name, Country\\
+Email: author1@example.com, author2@example.com, author3@example.com, author4@example.com}
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This paper proposes a Constraint-Aware Pipeline (CAP) for the deployment of Service Function Chains (SFCs) in dynamic network environments. Our approach integrates a constraint-aware path selection mechanism, a resource-aware microservice allocator, and a SARIMA-based traffic forecasting model to optimize SFC placement. By leveraging Large Language Models (LLMs) for automated configuration generation, we reduce deployment overhead while ensuring efficient microservice placement across multi-generation networking environments. This comprehensive framework provides a scalable, intelligent, and future-proof solution for optimizing SFC deployment.
+\end{abstract}
+
 \section{Related Work}
 
 Service Function Chaining (SFC) placement has been a critical research area in 5G and beyond networks, focusing on optimizing resource allocation, latency, and energy efficiency. Several studies have proposed solutions addressing various aspects of SFC orchestration. However, challenges remain in achieving real-time, adaptive, and automated deployment while maintaining scalability and efficiency.
@@ -16,17 +33,17 @@ Several latency-aware and mobility-aware SFC placement strategies have been prop
 
 \subsection{Our Contribution}
 
-While existing works have made significant advancements in SFC placement and orchestration, they often lack adaptability, predictive capabilities, and automation. Our proposed **LLM-assisted Constraint-Aware Pipeline (CAP)** addresses these gaps through the integration of multiple intelligent components. 
+While existing works have made significant advancements in SFC placement and orchestration, they often lack adaptability, predictive capabilities, and automation. Our proposed LLM-assisted Constraint-Aware Pipeline (CAP) addresses these gaps through the integration of multiple intelligent components.
 
-First, we introduce a **constraint-aware path selection mechanism** that dynamically optimizes SFC routing based on real-time network conditions. Unlike previous approaches that rely on static optimization, our method ensures adaptive routing to meet varying latency and resource constraints.
+First, we introduce a constraint-aware path selection mechanism that dynamically optimizes SFC routing based on real-time network conditions. Unlike previous approaches that rely on static optimization, our method ensures adaptive routing to meet varying latency and resource constraints.
 
-Second, we develop a **resource-aware microservice allocator**, which enables efficient placement of microservices within the network while minimizing resource fragmentation. By leveraging lightweight decision-making algorithms, our approach achieves high scalability compared to MILP-based solutions.
+Second, we develop a resource-aware microservice allocator, which enables efficient placement of microservices within the network while minimizing resource fragmentation. By leveraging lightweight decision-making algorithms, our approach achieves high scalability compared to MILP-based solutions.
 
-Additionally, we incorporate a **SARIMA-based traffic forecasting model** to predict workload variations. This predictive capability allows for proactive resource allocation, reducing the likelihood of congestion and ensuring smooth service function transitions.
+Additionally, we incorporate a SARIMA-based traffic forecasting model to predict workload variations. This predictive capability allows for proactive resource allocation, reducing the likelihood of congestion and ensuring smooth service function transitions.
 
-Lastly, by utilizing **Large Language Models (LLMs)** for automated configuration generation, our framework significantly reduces deployment overhead. Unlike reinforcement learning-based methods that require extensive training, our approach enables real-time, automated SFC placement across multi-generation networking environments.
+Lastly, by utilizing Large Language Models (LLMs) for automated configuration generation, our framework significantly reduces deployment overhead. Unlike reinforcement learning-based methods that require extensive training, our approach enables real-time, automated SFC placement across multi-generation networking environments.
 
-This comprehensive framework provides a **scalable, intelligent, and future-proof** solution for optimizing SFC deployment in dynamic network environments, outperforming existing techniques in terms of adaptability, automation, and efficiency.
+This comprehensive framework provides a scalable, intelligent, and future-proof solution for optimizing SFC deployment in dynamic network environments, outperforming existing techniques in terms of adaptability, automation, and efficiency.
 
 \section{References}
 
@@ -68,3 +85,5 @@ Author(s),
 Conference/Journal, 2020.
 
 \end{thebibliography}
+
+\end{document}
