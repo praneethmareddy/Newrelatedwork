@@ -1,0 +1,70 @@
+\section{Related Work}
+
+Service Function Chaining (SFC) placement has been a critical research area in 5G and beyond networks, focusing on optimizing resource allocation, latency, and energy efficiency. Several studies have proposed solutions addressing various aspects of SFC orchestration. However, challenges remain in achieving real-time, adaptive, and automated deployment while maintaining scalability and efficiency.
+
+Early works on SFC placement primarily focused on distributed strategies for optimizing resource utilization. In [1], a Distributed Service Function Chaining (DSFC) framework was proposed, utilizing a heuristic approach named Kariz to balance computational efficiency and optimality. While the method improved throughput, it lacked real-time adaptability and did not consider predictive traffic variations.
+
+Other approaches have tackled data center network design with an emphasis on path quality and reliability. The work in [2] introduced an Analytic Hierarchy Process (AHP)-based model for network topology optimization. However, this approach does not dynamically adjust to varying service function chain demands in highly heterogeneous environments.
+
+Traffic-aware bandwidth control mechanisms have also been explored to enhance fairness and efficiency. In [3], an adaptive bandwidth control mechanism was introduced to manage long-duration large flows, ensuring fair resource allocation between short and long flows. However, this approach did not incorporate predictive traffic modeling, limiting its effectiveness in handling dynamic network loads.
+
+Energy-aware orchestration techniques have gained attention for Beyond-5G URLLC services. The SCHE2MA framework proposed in [4] utilized a distributed reinforcement learning-based auction mechanism to optimize Virtual Network Function (VNF) placement while reducing energy consumption. However, the reliance on deep reinforcement learning introduced complexity and required extensive training, making real-time deployment challenging.
+
+End-to-end network slicing solutions have also been investigated. The work in [5] compared multiple Mixed Integer Linear Programming (MILP) models and heuristic approaches for optimal VNF placement in 5G networks. The study focused on reducing migration costs and bandwidth consumption, yet it did not integrate predictive mechanisms for workload forecasting, making it less efficient in dynamic traffic conditions.
+
+Several latency-aware and mobility-aware SFC placement strategies have been proposed to meet QoS requirements. In [6], an MILP-based formulation was used to optimize latency and resource allocation, but the high computational complexity limited its scalability. Another study [7] incorporated mobility considerations into the placement strategy, reducing service disruptions caused by handovers. However, both methods relied on static optimization models that did not adapt dynamically to real-time workload variations.
+
+\subsection{Our Contribution}
+
+While existing works have made significant advancements in SFC placement and orchestration, they often lack adaptability, predictive capabilities, and automation. Our proposed **LLM-assisted Constraint-Aware Pipeline (CAP)** addresses these gaps through the integration of multiple intelligent components. 
+
+First, we introduce a **constraint-aware path selection mechanism** that dynamically optimizes SFC routing based on real-time network conditions. Unlike previous approaches that rely on static optimization, our method ensures adaptive routing to meet varying latency and resource constraints.
+
+Second, we develop a **resource-aware microservice allocator**, which enables efficient placement of microservices within the network while minimizing resource fragmentation. By leveraging lightweight decision-making algorithms, our approach achieves high scalability compared to MILP-based solutions.
+
+Additionally, we incorporate a **SARIMA-based traffic forecasting model** to predict workload variations. This predictive capability allows for proactive resource allocation, reducing the likelihood of congestion and ensuring smooth service function transitions.
+
+Lastly, by utilizing **Large Language Models (LLMs)** for automated configuration generation, our framework significantly reduces deployment overhead. Unlike reinforcement learning-based methods that require extensive training, our approach enables real-time, automated SFC placement across multi-generation networking environments.
+
+This comprehensive framework provides a **scalable, intelligent, and future-proof** solution for optimizing SFC deployment in dynamic network environments, outperforming existing techniques in terms of adaptability, automation, and efficiency.
+
+\section{References}
+
+\begin{thebibliography}{99}
+
+\bibitem{ghaznavi2017distributed} 
+M. Ghaznavi, N. Shahriar, S. Kamali, R. Ahmed, and R. Boutaba,  
+"Distributed Service Function Chaining,"  
+IEEE Journal on Selected Areas in Communications, vol. 35, no. 11, pp. 2479–2492, Nov. 2017.
+
+\bibitem{kamiyama2010designing} 
+N. Kamiyama,  
+"Designing Data Center Networks using Analytic Hierarchy Process,"  
+IEEE ICCCN, 2010.
+
+\bibitem{kawahara2009adaptive} 
+R. Kawahara, T. Mori, N. Kamiyama, S. Harada, and H. Hasegawa,  
+"Adaptive Bandwidth Control to Handle Long-Duration Large Flows,"  
+IEEE ICC, 2009.
+
+\bibitem{dalgkitsis2022sche2ma} 
+A. Dalgkitsis et al.,  
+"SCHE2MA: Scalable, Energy-Aware, Multi-Domain Orchestration for Beyond-5G URLLC Services,"  
+IEEE Journal, 2022.
+
+\bibitem{harutyunyan2019orchestrating} 
+D. Harutyunyan et al.,  
+"Orchestrating End-to-End Slices in 5G Networks,"  
+IEEE CNSM, 2019.
+
+\bibitem{latencyaware2019} 
+Author(s),  
+"Latency–Aware Service Function Chain Placement in 5G Mobile Networks,"  
+Conference/Journal, 2019.
+
+\bibitem{mobilityaware2020} 
+Author(s),  
+"Latency and Mobility–Aware Service Function Chain Placement in 5G Networks,"  
+Conference/Journal, 2020.
+
+\end{thebibliography}
